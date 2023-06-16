@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* Estilização Geral */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    clear: both;
+    background-color: #e0dcd6;
+}
+
+
+.container{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Fim */
+/* Estilização do menu de links */
+.menu{
+    font-size: 14px;
+    height: auto;
+    background-color: #020275;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    text-align: center;
+}
+    
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu,
+.inicio{
+    vertical-align: middle;
+}
+/* Fim */
+/* Estilização do conteúdo */
+section{
+    margin-bottom: 150px;
+}
+
+section h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-indent: 50px;
+    border-bottom: solid #020275;
+
+    margin-top: 20px;
+}
+
+section p{
+    text-indent: 15px;
+    font-size: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagens{
+    background-color: #f35f5f;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    
+}
+
+.imagens img{
+    margin-right: auto;
+    margin-left: auto;
+    width: 360px;
+}
+/* Fim */
+/* Estilização do rodapé */
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social li a {
+    height: 32px;
+    width:  32px;
+    
+    display: inline;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+
+footer p{
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+footer .container {
+    position: relative;
+    bottom: 0;
+}
+/* Fim */

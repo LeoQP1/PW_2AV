@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Fale conosco</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="img/logo_uepa.png" alt="Logo da UEPA"></h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" class="inicio" target="_self" rel="prev"><img src="img/inicio.png"
+                        alt="Inicio"></a>
+            </li>
+            <li><a href="https://www.uepa.br/pt-br/tags/ccnt" target="_blank" rel="external">CCNT UEPA</a></li>
+            <li><a href="pag02.html" target="_self" rel="prev">Estrutura do curso</a></li>
+            <li><a href="pag03.html" target="_self" rel="prev">Avaliação</a></li>
+            <li><a href="pag04.html" target="_self" rel="prev">Corpo docente</a></li>
+            <li><a href="pag05.html" target="_self">Estrutura do campus</a></li>
+            <li><a href="pag06.html" target="_self" rel="next">Colegiado</a></li>
+            <li><a href="pag07.html" target="_self" rel="next">Núcleo docente</a></li>
+            <li><a href="pag08.html" target="_self" rel="next">Fale conosco</a></li>
+        </ul>
+    </header>
+
+    <section class="apresentacao">
+        <div class="container">
+            <h2>Fale conosco!</h2>
+            <p>Nesta aba você pode mandar qualquer dúvida sobre tudo que envolve o curso de Ciência de Dados.</p>
+            <h1>Basta preencher os campos abaixo e escrever sua dúvida:</h1>
+
+            <form>
+                <div class="row">
+                    <fieldset class="col-md-6">                        
+                        </form>
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="email@exemplo.com" required oninvalid="javascript:ValidarEmail(this);">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Qual o assunto da sua dúvida?</label>
+                            <select name="assunto" id="assunto" class="form-control">                                                               
+                                <option value="" data-default disabled selected></option>
+                                <option value="curso">Sobre o curso</option>
+                                <option value="avaliacao">Sobre a avaliação</option>
+                                <option value="estrutura">Sobre a estrutura do campus</option>
+                                <option value="docente">Sobre o corpo docente</option>
+                                <option value="Colegiado">Sobre o colegiado</option>
+                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duvida">Sua dúvida:</label>
+                            <input type="text" class="form-control" name="duvida" id="duvida">
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg pull-right">                    
+                    📩 Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <div class="container">
+            <p>Universidade do Estado do Pará - UEPA</p>
+            <p>Rua do Una, nº 156 - Belém - Pará - Brasil - 66.050-540 - Telégrafo</p>
+            <p>Site Oficial: <a href="https://www.uepa.br" target="_blank" rel="external">www.uepa.br</a></p>
+            <p>Telefone: (91) 3299-2202</p>
+            <p>&copy; Copyright Diogo de Souza Corrêa, Léo Queiroz Pontes</p>
+    
+            <ul class="social">
+                <li><a href="https://www.facebook.com/UepaOficial" target="_blank" rel="external"><img
+                            src="img/facebook.png" alt="Facebook" type="image/png"></a></li>
+                <li><a href="https://www.instagram.com/uepaoficial/" target="_blank" rel="external"><img
+                            src="img/instragram.png" alt="Instagram" type="image/png"></a></li>
+                <li><a href="https://twitter.com/Uepaoficial" target="_blank" rel="external"><img src="img/twitter.png"
+                            alt="Twitter" type="image/png"></a></li>
+                <li><a href="https://www.youtube.com/@universidadedoestadodopara3606" target="_blank" rel="external"><img
+                            src="img/youtube.png" alt="Youtube" type="image/png"></a></li>
+                <li><a href="https://www.flickr.com/photos/biuepa/" target="_blank" rel="external"><img src="img/flickr.png"
+                            alt="Flickr" type="image/png"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
