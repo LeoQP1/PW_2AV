@@ -16,31 +16,38 @@ footer {
 }
 /* Fim */
 /* Estilização do menu de links */
-.menu{
+.menu {
     font-size: 14px;
     height: auto;
-    background-color: #020275;
+    background-color: #1515bb;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
-.menu{
+.menu {
     text-align: center;
 }
-    
-.menu li{
+
+.menu li {
     display: inline;
     padding: 10px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: #ffffff;
 }
 
 .menu,
-.inicio{
+.inicio {
     vertical-align: middle;
+}
+
+#login {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
 }
 /* Fim */
 /* Estilização do conteúdo principal */
@@ -110,7 +117,7 @@ section .container{
 
     font-size: 20px;
     font-weight: bold;
-    border-bottom: solid #020275;
+    border-bottom: solid #1515bb;
 }
 
 .curriculo ul li{

@@ -20,9 +20,10 @@ footer {
 .menu{
     font-size: 14px;
     height: auto;
-    background-color: #020275;
+    background-color: #1515bb;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .menu{
@@ -37,6 +38,12 @@ footer {
 .menu a{
     text-decoration: none;
     color: #ffffff;
+}
+
+#login {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
 }
 
 .menu,

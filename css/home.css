@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* Estilização Geral */
+header{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,7 +13,6 @@ footer {
     clear: both;
     background-color: #e0dcd6;
 }
-
 
 .container{
     width: 940px;
@@ -45,47 +49,76 @@ footer {
     vertical-align: middle;
 }
 
-#login {
+#login{
     position: absolute;
     right: 20px;
     bottom: 5px;
 }
 /* Fim */
-/* Estilização do conteúdo */
-section{
-    margin-bottom: 150px;
-}
-
-section h1{
-    font-size: 24px;
-    font-weight: bold;
-    text-indent: 50px;
-    border-bottom: solid #020275;
-
-    margin-top: 20px;
-}
-
-section p{
-    text-indent: 15px;
-    font-size: 18px;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.imagens{
-    background-color: #f35f5f;
+/* Estilização da imagem */
+figure{
+    background-color: #7fffd4;
     border: 1px solid #ccc;
     text-align: center;
     padding: 15px;
-    margin: 20px;
-    
+    margin: 30px;  
 }
 
-.imagens img{
+figcaption{
+    font-style: italic;
+    padding-top: 10px;
+}
+
+#binario{
     margin-right: auto;
     margin-left: auto;
-    width: 360px;
+    width: 740px;
+}
+/* Fim */
+/* Estilização do conteúdo principal */
+/* Apresentação */
+.apresentacao{
+    padding-top: 20px;
+}
+
+.apresentacao h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.apresentacao h2{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    border-bottom: solid #0000ff;
+}
+
+.apresentacao p{
+    padding-top: 10px;
+    font-size: 16px;
+    text-indent: 15px;
+}
+/* Fim */
+/* Vantagens */
+.vantagens{
+    padding-top: 20px;
+}
+
+.vantagens h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 0;
+    border-bottom: solid #0000ff;
+}
+
+.vantagens ul{
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.vantagens li{
+    padding-bottom: 10px;
 }
 /* Fim */
 /* Estilização do rodapé */
@@ -98,13 +131,18 @@ section p{
 .social li a {
     height: 32px;
     width:  32px;
-    
+    padding-right: 5px;
     display: inline;
 }
 
 .social li {
     float: left;
     margin-left: 25px;
+}
+
+.copy{
+    text-align: center;
+    font-weight: bold;
 }
 
 footer p{
