@@ -1,3 +1,17 @@
+<?php
+    
+    if(isset($_POST['enviar']) && !empty($_POST)){   
+        include_once('conexao.php');
+        
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $assunto = $_POST['assunto'];
+        $mensagem = $_POST['mensagem'];
+
+        $result = mysqli_query($conn, "INSERT INTO fale_conosco(nome, email, assunto, mensagem) VALUES ('$nome', '$email', '$assunto', '$mensagem')");
+    }
+    ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -90,28 +104,6 @@
                 <li><a href="https://www.flickr.com/photos/biuepa/" target="_blank" rel="external"><img src="../img/flickr.png" alt="Flickr" type="image/png"></a></li>
             </ul>
         </div>
-    </footer>
-    <?php
-    //error_reporting(0);
-    // Verificando se os dados estão sendo enviados      
-    // print_r($_POST['nome']);
-    // print_r($_POST['email']);
-    // print_r($_POST['assunto']);
-    // print_r($_POST['mensagem']);
-    //
-    if(isset($_POST['enviar'])){   
-    include_once('conexao.php');
-    
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $assunto = $_POST['assunto'];
-    $mensagem = $_POST['mensagem'];
-
-    $result = mysqli_query($conn, "INSERT INTO fale_conosco(nome, email, assunto, mensagem) VALUES ('$nome', '$email', '$assunto', '$mensagem')");
-    }
-    
-
-    ?>
+    </footer>    
 </body>
-
 </html>

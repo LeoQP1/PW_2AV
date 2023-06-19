@@ -9,14 +9,14 @@
         //Se sim, Acessa
         include_once('conexao.php');
         $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $senha = $_POST['senha'];         
 
         //Verificando novamente se a informação está sendo recebida
         // print_r('Email: ' . $email);
         // echo '<br>';
         // print_r('Senha: ' . $senha);
 
-        // Verifica se há no banco de dados o email e senha envidados
+        // Verifica se há no banco de dados o email e senha envidados        
         $sql = "SELECT * FROM tab_login WHERE email = '$email' and senha = '$senha'";
 
         $result = $conn->query($sql);

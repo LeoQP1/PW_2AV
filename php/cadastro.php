@@ -1,18 +1,35 @@
+<?php
+//Verifica se há informação no submit
+if (isset($_POST['cadastrar']) && !empty($_POST)) {
+    include_once('conexao.php');
+
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+
+    $result = mysqli_query(
+        $conn,
+        "INSERT INTO tab_login(email, senha, nome, sobrenome) VALUES ('$email', '$senha', '$nome', '$sobrenome')"
+    );
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Página de Cadastro</title>
-    
+
 </head>
 
 <body>
     <div class="container">
         <div class="form">
-            <form action="#">
+            <form action="cadastro.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -24,13 +41,13 @@
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <label for="nome">Primeiro Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu primeiro nome" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -38,19 +55,14 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
 
-
-                    <div class="input-box">
-                        <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
-                    </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Cadastrar</a></button>
+                    <input id="inputSubmit" type="submit" name="cadastrar" value="Cadastrar"></input>
                     <button><a href="../html/index.html">Voltar para a página inicial</a></button>
                 </div>
             </form>

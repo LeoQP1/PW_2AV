@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="form">
-            <form action="testeLogin.php" method="POST">
+            <form action="salva_login.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Login</h1>
